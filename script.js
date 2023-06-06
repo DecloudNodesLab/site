@@ -27,7 +27,7 @@ function processCommand() {
 	displayOutput('<a href="https://explorer.nodestake.top/gitopia/staking/gitopiavaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gl37qcrm" target="_blank">Gitopa</a> - <a href="https://restake.app/realio/realiovaloper1chee8l82uxqfduxr8x0pfrp9psl08cy4a20m0u" target="_blank">Realio</a> - <a href="https://restake.app/kyve/kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r" target="_blank">Kyve</a>- <a href="https://restake.app/vidulum/vdlvaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gle0h5gs" target="_blank">Vidulum</a>')
 	displayOutput('\nTotal delegate: <span class="words">612779$</span> ');}, 2000);
 	setTimeout(function() {
-	displayOutput('\nEnter the command "mainnets","testnets",\n"software" to continue or select a section:');
+	displayOutput('\nEnter the command "mainnets","testnets" or \n"software" to continue. Or select a section:');
     displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');}, 3000);
   } else if (command === 'mainnets') {
 	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets', '_blank');
