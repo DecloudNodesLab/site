@@ -17,38 +17,34 @@ function processCommand() {
   if (command === 'hello world!') {
 	setTimeout(function() {
   // Код, который будет выполнен после 1 секунды ожидания
-    displayOutput('\nWelcome to Decloud Nodes Lab site!');
-    displayOutput('\nDevOps engineering and professional PoS validator.');
+    displayOutput('\nWelcome to <span class="words">Decloud Nodes Lab</span> site!');
+    displayOutput('\nContact link:');
     displayOutput('<a href="https://github.com/DecloudNodesLab/" target="_blank">Github</a> - <a href="https://twitter.com/NodesLab" target="_blank">Twitter</a> - <a href="https://t.me/NodesLab" target="_blank">Telegram_RU</a>');}, 1000);
     setTimeout(function() {
-	displayOutput('\nDecloud Nodes Lab validator info:');
+	displayOutput('\n<span class="words">Decloud Nodes Lab</span> validator info:');
 	displayOutput('Delegate to us: ');
 	displayOutput('<a href="https://restake.app/akash/akashvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gq0kaj4" target="_blank">Akash Network</a> - <a href="https://restake.app/sentinel/sentvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64grgugsr" target="_blank">Sentinel dVPN</a> - <a href="https://restake.app/desmos/desmosvaloper1fkpnxtn4nvm27zkpyuvcz3rpa9rzxm70q4v8sn" target="_blank">Desmos</a>- <a href="https://restake.app/kava/kavavaloper1mrd5kqtq28p39wcrkm8tk8avtn57arrurxfah0" target="_blank">Kava</a>');
 	displayOutput('<a href="https://explorer.nodestake.top/gitopia/staking/gitopiavaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gl37qcrm" target="_blank">Gitopa</a> - <a href="https://restake.app/realio/realiovaloper1chee8l82uxqfduxr8x0pfrp9psl08cy4a20m0u" target="_blank">Realio</a> - <a href="https://restake.app/kyve/kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r" target="_blank">Kyve</a>- <a href="https://restake.app/vidulum/vdlvaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gle0h5gs" target="_blank">Vidulum</a>')
-	displayOutput('\nTotal delegate: 612779$ ');}, 2000);
+	displayOutput('\nTotal delegate: <span class="words">612779$</span> ');}, 2000);
 	setTimeout(function() {
-	displayOutput('\nEnter the command "mainnets","testnets","software" to continue or select a section:');
+	displayOutput('\nEnter the command "mainnets","testnets","software"\nto continue or select a section:');
     displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');}, 3000);
   } else if (command === 'mainnets') {
 	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets', '_blank');
     displayOutput('Mainnets opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
-    displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');
   } else if (command === 'testnets') {
 	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets', '_blank');
     displayOutput('Testnets opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
-    displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');
   } else if (command === 'software') {
 	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/Software', '_blank');
     displayOutput('Software opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
-    displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');
   } else if (command === 'guides') {
 	window.open('https://github.com/DecloudNodesLab/Guides/blob/main/README.md', '_blank');
     displayOutput('Guides opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
-    displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');
   }
     else {
     displayOutput(`bash: Command not found: ${command}`);
