@@ -16,8 +16,8 @@ function processCommand() {
  // Обработка команды Hello World!
   if (command === 'hello world!') {
 	setTimeout(function() {
-  // Код, который будет выполнен после 1 секунды ожидания
     displayOutput('\nWelcome to <span class="words">Decloud Nodes Lab</span> site!');
+    displayOutput('<a href="http://dnl.explorer.ingress.europlots.com/" target="_blank">\nDecloud Nodes Lab Explorer && Wallet</a>
     displayOutput('\nContact link:');
     displayOutput('<a href="https://github.com/DecloudNodesLab/" target="_blank">Github</a> - <a href="https://twitter.com/NodesLab" target="_blank">Twitter</a> - <a href="https://t.me/NodesLab" target="_blank">Telegram_RU</a>');}, 1000);
     setTimeout(function() {
