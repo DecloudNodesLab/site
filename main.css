@@ -1,43 +1,64 @@
 body {
   background-color: #000;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   font-family: monospace;
-  font-size: 1.5vh;
-
+  font-size: 1.8vh;
+  height: 100%;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 99vw;
+  height: 5%; /* Задайте высоту подходящую для вашего футера */	
+}
+.footer contact{
+	
+}
+#main{
+  display: flex;
+  justify-content: center;	
+  flex-wrap: wrap;
+  flex-direction: row;
 
 }
-a{color: green;}
+a{color: green; text-decoration: none;  font-weight: bold;}
 .words{color: red;}
 h1{text-align: center;}
+
 .image-container {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 30px;
   margin-left: 25%;
 }
-.image-container img {width: 50vw;max-width: 1000px;}
+.image-container img {width: 50vw;}
 
 .terminal {
-  width: 85vw;
-  margin-top: 50px;
-  margin-left: 3.5vw;
-  margin-right: 3.5vw;
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   border: 2px solid #fff;
   padding: 20px;
+  float: right;
+  height: 40vh;
+  background-color: #000;
+  
+
 }
 #about{
-  margin-top: 50px;
-  margin-left: 3.5vw;
-  width: 90vw;
-  font-size: 2vh;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  float: right;
 }
-.input {
-  display: flex;
-}
+.input {display: flex;}
 
-.input span {
-  color: #0f0;
-  margin-right: 5px;
-}
+.input span {color: #0f0;  margin-right: 5px; }
 
 .input input {
   background: transparent;
@@ -46,11 +67,14 @@ h1{text-align: center;}
   font-family: monospace;
   font-size: inherit;
   outline: none;
-  width: 90vw;
+  width: 40vw;
 }
 #output {
-  height: 45vh;
+  height: 35vh;
   overflow-y: scroll;
   overflow-wrap: break-word;
   color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1.6vh;
 }
