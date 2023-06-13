@@ -2,29 +2,15 @@
 version: "2.0"
 services:
   site:
-    image: ubuntu:22.04     
-    command:
-      - "bash"
-      - "-c"
-    args:
-      - 'apt-get update ; apt-get upgrade -y ; apt-get install git nginx -y ;
-        git clone https://github.com/DecloudNodesLab/site;
-        sed -i -e "s|root .*|root /site/;|" /etc/nginx/sites-available/default;
-        service nginx start; sleep infinity'    
+    image: dimokus88/dnlsite:0.1        
     expose:
       - port: 80
         to:
-          - global: true		  
+          - global: true
   explorer:
-    image: ubuntu:22.04     
-    command:
-      - "bash"
-      - "-c"
-    args:
-      - 'apt-get update ; apt-get upgrade -y ; apt-get install wget curl tar nginx -y ;
-        wget https://github.com/DecloudNodesLab/explorer/raw/master/explorer.tar.gz; tar -xvf explorer.tar.gz && rm explorer.tar.gz;
-		sed -i -e "s|root .*|root /dist;|" /etc/nginx/sites-available/default;
-        service nginx start; sleep infinity'
+    image: dimokus88/dnlexplorer:0.1     
+    env:
+      - "LINK_EXPLORER=https://github.com/DecloudNodesLab/explorer/raw/master/explorer.tar.gz"
     expose:
       - port: 80
         to:
@@ -38,8 +24,7 @@ profiles:
         memory:
           size: 128Mi
         storage:
-          size: 256Mi
-		  
+          size: 350Mi		  
     explorer:
       resources:
         cpu:
@@ -47,8 +32,7 @@ profiles:
         memory:
           size: 512Mi
         storage:
-          size: 350Mi
-          
+          size: 350Mi          
   placement:
     akash: 
       pricing:
