@@ -1,7 +1,7 @@
 ---
 version: "2.0"
 services:
-  app:
+  site:
     image: ubuntu:22.04     
     command:
       - "bash"
@@ -13,30 +13,57 @@ services:
         service nginx start; sleep infinity'    
     expose:
       - port: 80
-        as: 80
+        to:
+          - global: true		  
+  explorer:
+    image: ubuntu:22.04     
+    command:
+      - "bash"
+      - "-c"
+    args:
+      - 'apt-get update ; apt-get upgrade -y ; apt-get install wget curl tar nginx -y ;
+        wget https://github.com/DecloudNodesLab/explorer/raw/master/explorer.tar.gz; tar -xvf explorer.tar.gz && rm explorer.tar.gz;
+		sed -i -e "s|root .*|root /dist;|" /etc/nginx/sites-available/default;
+        service nginx start; sleep infinity'
+    expose:
+      - port: 80
         to:
           - global: true
-        accept:
-          - declab.pro
 profiles:
   compute:
-    app:
+    site:
       resources:
         cpu:
           units: 0.1
         memory:
           size: 128Mi
         storage:
+          size: 256Mi
+		  
+    explorer:
+      resources:
+        cpu:
+          units: 0.3
+        memory:
+          size: 512Mi
+        storage:
           size: 350Mi
           
   placement:
     akash: 
       pricing:
-        app:
+        site:
+          denom: uakt
+          amount: 10000
+        explorer:
           denom: uakt
           amount: 10000
 deployment:
-  app:
+  site:
     akash:
-      profile: app
+      profile: site
+      count: 1 
+  explorer:
+    akash:
+      profile: explorer
       count: 1 
