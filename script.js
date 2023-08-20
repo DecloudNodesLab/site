@@ -20,7 +20,7 @@ function processCommand() {
     setTimeout(function() {
 	displayOutput('\n<span class="words">Decloud Nodes Lab</span> PoS validator info.');
 	displayOutput('\nSupported mainnets: <span class="words">8</span> ');
-	displayOutput('Total delegate: <span class="words">612779$</span> ');
+	displayOutput('Total delegate: <span class="words">1212779$</span> ');
 	displayOutput('\nDelegate: ');
 	displayOutput('<a href="https://restake.app/akash/akashvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gq0kaj4" target="_blank">Akash Network</a> - <a href="https://restake.app/sentinel/sentvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64grgugsr" target="_blank">Sentinel dVPN</a> - <a href="https://restake.app/desmos/desmosvaloper1fkpnxtn4nvm27zkpyuvcz3rpa9rzxm70q4v8sn" target="_blank">Desmos</a>');
 	displayOutput('<a href="https://restake.app/kava/kavavaloper1mrd5kqtq28p39wcrkm8tk8avtn57arrurxfah0" target="_blank">Kava</a> - <a href="https://explorer.nodestake.top/gitopia/staking/gitopiavaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gl37qcrm" target="_blank">Gitopa</a> - <a href="https://restake.app/realio/realiovaloper1chee8l82uxqfduxr8x0pfrp9psl08cy4a20m0u" target="_blank">Realio</a> - <a href="https://restake.app/kyve/kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r" target="_blank">Kyve</a> - <a href="https://restake.app/vidulum/vdlvaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gle0h5gs" target="_blank">Vidulum</a>')
