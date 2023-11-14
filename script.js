@@ -19,29 +19,30 @@ function processCommand() {
     displayOutput('\nWelcome to <span class="words">Decloud Nodes Lab</span> site!');}, 1000);
     setTimeout(function() {
 	displayOutput('\n<span class="words">Decloud Nodes Lab</span> PoS validator info.');
-	displayOutput('\nSupported mainnets: <span class="words">8</span> ');
-	displayOutput('Total delegate: <span class="words">2120455$</span> ');
+	displayOutput('\nSupported mainnets: <span class="words">11</span> ');
+	displayOutput('Total delegate: <span class="words">2351255$</span> ');
 	displayOutput('\nDelegate: ');
 	displayOutput('<a href="https://restake.app/akash/akashvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gq0kaj4" target="_blank">Akash Network</a> - <a href="https://restake.app/sentinel/sentvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64grgugsr" target="_blank">Sentinel dVPN</a> - <a href="https://restake.app/desmos/desmosvaloper1fkpnxtn4nvm27zkpyuvcz3rpa9rzxm70q4v8sn" target="_blank">Desmos</a>');
-	displayOutput('<a href="https://restake.app/kava/kavavaloper1mrd5kqtq28p39wcrkm8tk8avtn57arrurxfah0" target="_blank">Kava</a> - <a href="https://explorer.nodestake.top/gitopia/staking/gitopiavaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gl37qcrm" target="_blank">Gitopa</a> - <a href="https://restake.app/realio/realiovaloper1chee8l82uxqfduxr8x0pfrp9psl08cy4a20m0u" target="_blank">Realio</a> - <a href="https://restake.app/kyve/kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r" target="_blank">Kyve</a> - <a href="https://restake.app/vidulum/vdlvaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gle0h5gs" target="_blank">Vidulum</a>')
-	}, 2000);
+	displayOutput('<a href="https://restake.app/kava/kavavaloper1mrd5kqtq28p39wcrkm8tk8avtn57arrurxfah0" target="_blank">Kava</a> - <a href="https://explorer.nodestake.top/gitopia/staking/gitopiavaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gl37qcrm" target="_blank">Gitopa</a> - <a href="https://restake.app/realio/realiovaloper1chee8l82uxqfduxr8x0pfrp9psl08cy4a20m0u" target="_blank">Realio</a> - <a href="https://restake.app/kyve/kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r" target="_blank">Kyve</a>');
+	displayOutput('<a href="https://restake.app/source/sourcevaloper126erf9dmm4e3fs0suk9lnv24wudswkm3ekfqfh" target="_blank">Source</a> - <a href="https://restake.app/empowerchain/empowervaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64grp0c0w" target="_blank">Empower</a> - <a href="https://restake.app/desmos/desmosvaloper1fkpnxtn4nvm27zkpyuvcz3rpa9rzxm70q4v8sn" target="_blank">Desmos</a> - <a href="https://restake.app/vidulum/vdlvaloper1nuphu4p06dlgx2se0w58z5c7yv00r5gle0h5gs" target="_blank">Vidulum</a>')
+        }, 2000);
 	setTimeout(function() {
 	displayOutput('\nEnter the command "mainnets","testnets" or \n"software" to continue. Or select a section:');
-    displayOutput('<a href="https://github.com/DecloudNodesLab/Guides/blob/main/README.md" target="_blank">guides</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets" target="_blank">mainnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets" target="_blank">testnets</a> - <a href="https://github.com/DecloudNodesLab/Projects/tree/main/Software" target="_blank">software</a>');}, 3000);
+    displayOutput('<a href="https://services.declab.pro/guides" target="_blank">guides</a> - <a href="https://services.declab.pro/blockchains-lab/mainnets" target="_blank">mainnets</a> - <a href="https://services.declab.pro/blockchains-lab/testnets" target="_blank">testnets</a> - <a href="https://services.declab.pro/software" target="_blank">software</a>');}, 3000);
   } else if (command === 'mainnets') {
-	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Mainnets', '_blank');
+	window.open('https://services.declab.pro/blockchains-lab/mainnets', '_blank');
     displayOutput('Mainnets opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
   } else if (command === 'testnets') {
-	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/CosmosSDK/Testnets', '_blank');
+	window.open('https://services.declab.pro/blockchains-lab/testnets', '_blank');
     displayOutput('Testnets opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
   } else if (command === 'software') {
-	window.open('https://github.com/DecloudNodesLab/Projects/tree/main/Software', '_blank');
+	window.open('https://services.declab.pro/blockchains-lab/software', '_blank');
     displayOutput('Software opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
   } else if (command === 'guides') {
-	window.open('https://github.com/DecloudNodesLab/Guides/blob/main/README.md', '_blank');
+	window.open('https://services.declab.pro/guides', '_blank');
     displayOutput('Guides opened  in a new tab your browser!');
     displayOutput('Enter the command to continue or select a section:');
   }
