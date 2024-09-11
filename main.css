@@ -10,9 +10,9 @@ body {
 }
 footer{
   position: absolute;
-  bottom: 0;
+  bottom: 2;
   width: 99vw;
-  height: 10%; /* Задайте высоту подходящую для вашего футера */	
+  height: 7%; /* Задайте высоту подходящую для вашего футера */	
 }
 .footer contact{
 	
